@@ -1,8 +1,8 @@
 //Mudar o tema:
 const themeMap = {
   dark: "light",
-  light: "solar",
-  solar: "dark"
+  light: "dark",
+  //solar: "dark"
 };
 
 const theme = localStorage.getItem('theme')
