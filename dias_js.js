@@ -22,4 +22,16 @@ function toggleTheme() {
 
 document.getElementById('themeButton').onclick = toggleTheme;
 
- 
+//Jquery do projeto
+
+$(".gallery").magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery:{
+    enabled: true
+  }
+}); 
+
+//Desativar right click
+
+document.addEventListener('contextmenu', event => event.preventDefault());
