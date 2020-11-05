@@ -11,7 +11,7 @@
   <script defer src="dias_js.js"></script>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="dias_style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
@@ -141,55 +141,90 @@
     </ul>
   </nav>
 
-  <div class="gallery-section">
-    <div class="inner-width">
-      <h1>Portfolio</h1>
-      <div class="border"></div>
-      <div class="gallery">
-
-        <a href="Images/img-0.jpg" class="image">
-          <img src="Images/img-0.jpg" alt="">
-         </a>
-
-        <a href="Images/img-1.jpg" class="image">
-          <img src="Images/img-1.jpg" alt="">
-        </a>
-
-        <a href="Images/img-10.jpg" class="image">
-          <img src="Images/img-10.jpg" alt="">
-        </a>
-
-        <a href="Images/img-11.jpg" class="image">
-          <img src="Images/img-11.jpg" alt="">
-        </a>
-
-        <a href="Images/img-12.jpg" class="image">
-          <img src="Images/img-12.jpg" alt="">
-        </a>
-
-        <a href="Images/img-13.jpg" class="image">
-          <img src="Images/img-13.jpg" alt="">
-        </a>
-
-        <a href="Images/img-14.jpg" class="image">
-          <img src="Images/img-14.jpg" alt="">
-        </a>
-
-        <a href="Images/img-15.jpg" class="image">
-          <img src="Images/img-15.jpg" alt="">
-        </a>
-        
-
-      </div>
+  <div class="header">
+    <h1>Portfolio</h1>
+  </div> 
+  
+  
+  <div class="gallery">
+       
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Comissions</button>
+      <button class="btn" onclick="filterSelection('cars')"> Linktober</button>
+      <button class="btn" onclick="filterSelection('people')"> Fanart</button>
     </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="./Images/img-0.jpg" alt="Hardwired Lo-fi" style="width:100%">
+          <h4>Hardwired Lo-fi profile pic comission.</h4>
+          <p>Lo-fi youtube channel that comissioned a profile pic</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./Images/img-4.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./Images/img-12.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column cars">
+        <div class="content">
+          <img src="./Images/img-11.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="./Images/img-12.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="./Images/img-13.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="./Images/img-14.jpg" alt="People" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="./Images/img-15.jpg" alt="People" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="./Images/img-2.jpg" alt="People" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
   </div>
-
-
+  <!-- END GRID -->
+  </div> 
 </body>
-
-
-
-</body>
-
-
+</html>
 </html>
